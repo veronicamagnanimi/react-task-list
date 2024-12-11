@@ -12,7 +12,7 @@ function App() {
 const list = (array) => {
   return array.map(curItem => {
     return <li key={curItem.id}>
-      <h3>{curItem.title}</h3>
+      <h3>{curItem.title}</h3> <span className = "btn-orange">{curItem.state}</span>
       <p>Priority: {curItem.priority}</p>
       <p>Est. time: {curItem.estimatedTime}</p>
     </li>
