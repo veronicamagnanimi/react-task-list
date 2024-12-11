@@ -11,9 +11,10 @@ function App() {
 //per ogni array filtrato creo la lista
 const list = (array) => {
   return array.map(curItem => {
-    return <li key={curItem.title}>
-      <p>{curItem.priority}</p>
-      <p>{curItem.estimatedTime}</p>
+    return <li key={curItem.id}>
+      <h3>{curItem.title}</h3>
+      <p>Priority: {curItem.priority}</p>
+      <p>Est. time: {curItem.estimatedTime}</p>
     </li>
   })
 }
