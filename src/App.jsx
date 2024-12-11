@@ -24,18 +24,18 @@ const list = (array) => {
   return (
     <>
       <header>
-      <h1>Task Manager</h1>
+      <h1 className = "pd-20">Task Manager</h1>
       </header>
 
       <main>
-      <h2>Current task(4)</h2>
+      <h2 className = "pd-20">Current task (4)</h2>
       <ul>
        {list(inBack)}
       </ul>
 
       <hr></hr>
 
-      <h2>Completed Task(6)</h2>
+      <h2 className = "pd-20">Completed Task (6)</h2>
       <ul>
         {list(completed)}
       </ul>
